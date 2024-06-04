@@ -23,7 +23,7 @@ public class OptionQuestion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "INT(11)")
-    private Long id;
+    private Long optionQuestionId;
 
     @Lob
     @Column(nullable = false)
@@ -34,5 +34,5 @@ public class OptionQuestion {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "questionId")
-    private Question question;
+    private Question questionId;
 }

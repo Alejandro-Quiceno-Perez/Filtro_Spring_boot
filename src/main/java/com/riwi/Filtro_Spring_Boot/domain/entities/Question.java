@@ -42,10 +42,10 @@ public class Question {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "surveyId")
-    private Survey survey;
+    private Survey surveyId;
 
     @OneToMany(
-        mappedBy = "question",
+        mappedBy = "questionId",
         cascade = CascadeType.ALL,
         orphanRemoval = false,
         fetch = FetchType.LAZY

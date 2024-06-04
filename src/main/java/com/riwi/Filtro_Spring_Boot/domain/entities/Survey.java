@@ -46,7 +46,7 @@ public class Survey {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "userId")
-    private User user;
+    private User userId;
 
     @OneToMany(
         mappedBy = "surveyId",
