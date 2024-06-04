@@ -1,14 +1,15 @@
 package com.riwi.Filtro_Spring_Boot.api.dto.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserResponse {
-    
+    private Long userId;
+    private String username;
+    private String email;
+    private boolean active;
 }
